@@ -560,9 +560,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50686474d780b0841bce580cc2fa93f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
-  gravityModifier: 2
-  isOnGround: 1
+  jumpForce: 700
+  gravityModifier: 1.5
+  isOnGround: 0
+  gameOver: 0
 --- !u!54 &1604694321
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -571,7 +572,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604694318}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 60
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -609,7 +610,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
